@@ -14,6 +14,10 @@ public class GreetingRepository {
         return greetings;
     }
 
+    public void deleteAll() {
+        greetings.clear();
+    }
+
     public void save(Greeting greeting) {
         greetings.add(greeting);
     }
